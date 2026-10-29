@@ -19713,6 +19713,12 @@ cco:ont00002000 rdf:type owl:NamedIndividual ,
                  rdfs:label "Kilopascal Measurement Unit"@en .
 
 
+###  https://www.commoncoreontologies.org/ont00002001
+cco:ont00002001 rdf:type owl:NamedIndividual ,
+                          cco:ont00001004 ;
+                 rdfs:label "Ohm Measurement Unit"@en .
+
+
 #################################################################
 #    General axioms
 #################################################################
