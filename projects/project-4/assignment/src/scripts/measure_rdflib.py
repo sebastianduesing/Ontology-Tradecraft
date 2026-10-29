@@ -87,6 +87,7 @@ def main():
         g.add((mice_id, RDF.type, MICE))
         g.add((mice_id, RDFS.label, Literal(mice_label)))
         g.add((mice_id, HAS_DECIMAL_VALUE, Literal(value, datatype=XSD.decimal)))
+        g.add((mice_id, IS_MEASUREMENT_OF, sdc_id))
         g.add((UNITS[unit], RDF.type, UNIT))
         g.add((UNITS[unit], RDFS.label, Literal(unit)))
         g.add((mice_id, USES_MEASUREMENT_UNIT, UNITS[unit]))
