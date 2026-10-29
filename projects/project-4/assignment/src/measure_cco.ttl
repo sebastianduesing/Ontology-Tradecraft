@@ -108,3 +108,21 @@
 <https://example.org/project4/P4_0000023> a obo:BFO_0000020 ;
     rdfs:label "pressure of Pump-A1" .
 
+cco:ont00001450 a cco:ont00000120 ;
+    rdfs:label "V" .
+
+cco:ont00001694 a cco:ont00000120 ;
+    rdfs:label "pounds per square inch" .
+
+cco:ont00002001 a cco:ont00000120 ;
+    rdfs:label "ohm" .
+
+cco:ont00001606 a cco:ont00000120 ;
+    rdfs:label "C" .
+
+cco:ont00002000 a cco:ont00000120 ;
+    rdfs:label "kilopascal" .
+
+cco:ont00001724 a cco:ont00000120 ;
+    rdfs:label "F" .
+
