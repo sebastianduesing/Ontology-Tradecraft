@@ -9,11 +9,8 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 SELECT ?subj ?pred ?obj
 WHERE {
-	?subj ?pred ?obj .
-	FILTER (
-		?pred a owl:AnnotationProperty .
-	)
-	FILTER(
-		REGEX(STR(?obj), "^\s") || REGEX (STR(?obj), "\s^")
-	)
+  ?subj ?pred ?obj .
+  ?pred a owl:AnnotationProperty
+  FILTER (isLiteral(?obj))
+  FILTER (REGEX(STR(?obj), "^\\s") || REGEX (STR(?obj), "\\s^"))
 }
