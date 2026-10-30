@@ -4,3 +4,12 @@
 #     Any owl:Ontology must have an rdfs:label.
 # Severity:
 #     Warning
+
+PREFIX skos: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?duplicate
+WHERE {
+	?x skos:definition ?defn .
+	?y skos:definition ?defn .
+	FILTER ( ?y != ?x )
+}

@@ -15,7 +15,7 @@ WHERE {
 	FILTER NOT EXISTS {
 		?class rdfs:subClassOf ?ancestor .
 		FILTER (
-			STRSTARTS(STR(?ancestor), CONCAT(STR(obo:), "BFO_"))
+			REGEX(STR(?ancestor), "/BFO_")
 		)
 	}
 }
